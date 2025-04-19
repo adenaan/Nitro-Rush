@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nitro Rush: Highway Havoc</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: sans-serif; }
+    canvas { background: url('road.png') repeat-y center center; background-size: cover; display: block; }
+    #boostBtn {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      padding: 12px 20px;
+      background: red;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+      border: none;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas>
+  <button id="boostBtn">BOOST</button>
+  <audio id="boostSound" src="boost.mp3" preload="auto"></audio>
+  <script src="game.js"></script>
+</body>
+</html>
